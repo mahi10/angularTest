@@ -1,0 +1,52 @@
+<div class="jumbotron text-center" style="background: #fff;">
+    <h1>Sign up</h1>
+    <!-- <p>This page demonstrates <span class="text-danger">multiple</span> and <span class="text-danger"></span>named</span> views.</p> -->
+    <form role = "form" class="well">
+        <div class = "form-group">
+            <label for = "email"> Email:  </label>
+            <input type = "email" id = "email" class = "form-control" placeholder = "Enter Email " ng-model = "newcontact.email">
+        </div>
+        <div class = "form-group">
+            <label for = "password"> Password:  </label>
+            <input type = "password" id = "password" class = "form-control" placeholder = "Enter Password " ng-model = "newcontact.password">
+        </div>
+        <div class = "form-group">
+            <label for = "fname"> First Name:  </label>
+            <input type = "text" id = "fname" class = "form-control" placeholder = "Enter first Name " ng-model = "newcontact.first_name">
+        </div>
+        <div class = "form-group">
+            <label for = "lname"> Last Name:  </label>
+            <input type = "text" id = "lname" class = "form-control" placeholder = "Enter last Name " ng-model = "newcontact.last_name">
+        </div>
+
+        <div class = "form-group">
+            <label for = "phone"> Phone:  </label>
+            <input type = "text" id = "phone" class = "form-control" placeholder = "Enter Phone " ng-model = "newcontact.phone">
+        </div>
+        <div class = "form-group">
+            <label for = "device_type"> Device Type:  </label>
+            <input type = "text" id = "device_type" class = "form-control" placeholder = "Enter device type " ng-model = "newcontact.device_type">
+        </div>
+        <div class = "form-group">
+            <label for = "player_id"> Player ID:  </label>
+            <input type = "text" id = "player_id" class = "form-control" placeholder = "Enter player id " ng-model = "newcontact.player_id">
+        </div>
+        <br>
+        <input type="hidden" ng-model="newcontact.id">
+        <input type="button" class="btn btn-primary" ng-click="singUp(newcontact)" class="btn btn-primary" value = "Submit">
+      </form>
+</div>
+
+<!-- <div class="row">
+
+    <div class="col-sm-6">
+        <div ui-view="columnOne"></div>
+    </div>
+    
+    
+    <div class="col-sm-6">
+        <div ui-view="columnTwo"></div>
+    </div>
+
+    
+</div> -->
